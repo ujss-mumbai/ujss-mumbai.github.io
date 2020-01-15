@@ -1,0 +1,136 @@
+<div class="content-section" id="content-section" style="padding-top: 0px;">
+    <div width="70%" align="center">
+        <div class="inner_border">
+            <div class="middle_inner_content">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                        <img src="{{ slide.img }}" alt="" width="100%">
+                    </div>
+                </ngx-slick-carousel>
+                <!-- <div class="image_slider">
+                    <div>
+                        <img src="assets/banner/5.jpg">
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="ban-text-wrap">
+                                <div class="odia-milan-title">ଓଡ଼ିଆ ମିଳନ</div>
+                                <div class="odia-date">ଶନିବାର, ୨୬ ଜାନୁଆରୀ ୨୦୧୯ </div>
+                                <div class="english-text">
+                                    <div class="eng-head-title">Odia Milan, Saturday, 26th January 2019</div>
+                                    <div class="eng-subtitle">(A Family get together of odia people)</div>
+                                    <div class="venue-detail">Venue: Trahi Achyut Ashram, Mumbai</div>
+                                </div><br>
+                                <div class="guests">
+                                    <div>Chief Speaker: Shree Rajendra Madela(Sangathan Mantri,
+                                        PurvaKshetra-Vanavasi Kalyan Ashram)</div>
+                                </div>
+                            </div>
+                            <img src="/banner/00_old.png">
+                        </a>
+                        <img src="assets/banner/0.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/banner/1.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/banner/2.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/banner/3.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/banner/4.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/banner/5.jpg">
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="ban-text-wrap">
+                                <div class="odia-milan-title">ଓଡ଼ିଆ ମିଳନ</div>
+                                <div class="odia-date">ଶନିବାର, ୨୬ ଜାନୁଆରୀ ୨୦୧୯ </div>
+                                <div class="english-text">
+                                    <div class="eng-head-title">Odia Milan, Saturday, 26th January 2019</div>
+                                    <div class="eng-subtitle">(A Family get together of odia people)</div>
+                                    <div class="venue-detail">Venue: Trahi Achyut Ashram, Mumbai</div>
+                                </div><br>
+                                <div class="guests">
+                                    <div>Chief Speaker: Shree Rajendra Madela(Sangathan Mantri,
+                                        PurvaKshetra-Vanavasi Kalyan Ashram)</div>
+                                </div>
+                            </div>
+                            <img src="/banner/00_old.png">
+                        </a>
+                    </div>
+                </div> -->
+                <div class="home-wrap">
+                    <div class="home-txt-content">
+                        <p class="tag-line">UJSS - Who we are</p>
+                        <p>
+                            The <strong>'Utkal Jagruti Seva Sangh' (UJSS)</strong> was established in Mumbai as
+                            a voluntary
+                            Organisation to serve the destitute with the help of a group of pravasi odia people.
+                            The
+                            <strong>UJSS</strong> is a network of dedicated volunteers (swyam sevaks) drawn from
+                            varied walks of
+                            life. It works with many other like-minded organisations from where it gets
+                            disciplined work force
+                            to carry out rescue, relief, protection of cow, helping cancer patients and
+                            rehabilitation work in a
+                            systematic way.
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                            Be it blood donation to cancer patients, financial help to needy people,distributing
+                            Bhagvat Geeta
+                            and cloths to poor or any form of natural calamity volunteers of
+                            <strong>UJSS</strong> have fought
+                            against all odds to reach the people in their hours of crisis.</p>
+                        <p>
+                            The <strong>UJSS</strong> tries it's level best to resolve all kinds of physical,
+                            mental, financial,
+                            social and religious problems of the needy people. Those wanting to benefit from
+                            this sangathan
+                            appointed by the '<strong>UJSS</strong>' should place their problems openly before
+                            its members.
+                            Apart from this Its history is converting challenges into opportunities and serving
+                            people with
+                            love, dedication and disciplined.
+                        </p>
+                        <p>
+                            Anybody can take benefit from <strong>UJSS</strong> and can thus participate in this
+                            endeavour of
+                            public welfare. The <strong>UJSS</strong> is being set up with an objective of
+                            protecting,
+                            fostering, promoting and propagating the odia culture.
+                        </p>
+                        <p>
+                            The primary objective of the Sangh is to instill the values and traits of odia
+                            sanskruti and culture
+                            in the life of each and every individual. The noble endeavours of this Sangh for
+                            cultural upliftment
+                            are singularly conducive to nation building.
+                        </p>
+                        <p style="MARGIN: 4px 3px 4px 9px" align="center">
+                        </p>
+                    </div>
+                    <div class="home-add-content">
+                        <a href="/donate" class="donation-link">DONATION</a>
+                        <div class="home-add-wrap">
+                            <div class="add_header">Best complements from:</div>
+                            <div class="advertise_slides">
+                                    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="sponsorSlideConfig">
+                                        <div ngxSlickItem *ngFor="let slide of sponsorSlides" class="slide">
+                                            <img src="{{ slide.img }}" alt="" width="100%">
+                                        </div>
+                                    </ngx-slick-carousel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

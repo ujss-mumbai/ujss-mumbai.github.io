@@ -1,0 +1,164 @@
+<div width="70%" align="center">
+    <div class="inner_border">
+        <div class="middle_inner_content">
+            <div class="grey-bg">
+                <div class="form-content">
+                    <div class="form-header-group ">
+                        <div class="header-text httal htvam">
+                            <h3 id="header_16" class="form-header" data-component="header">
+                                26th Jan 2019 Sneha Milan Online Registration
+                            </h3>
+                            <div id="subHeader_16" class="form-subHeader">
+                                Please fill in the form below. We'll contact you as soon as possible.
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="all-data-only">
+                            <div class="field-wrap">
+                                <div class="field-label">Full Name<span class="red">*</span>:</div>
+                                <div class="field-content"><input type="text" id="name" placeholder="Enter your name"
+                                        class="input-box" required=""></div>
+                            </div>
+                            <div class="field-wrap">
+                                <div class="field-label">Address<span class="red">*</span>:</div>
+                                <div class="field-content">
+                                    <input type="text" id="address" placeholder="Enter your address" class="input-box"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="field-wrap">
+                                <div class="field-label">E-mail<span class="red">*</span>:</div>
+                                <div class="field-content"><input type="email" id="email" placeholder="Enter your email"
+                                        class="input-box" required=""></div>
+                            </div>
+                            <div class="field-wrap">
+                                <div class="field-label">Mobile Number<span class="red">*</span>:</div>
+                                <div class="field-content"><input type="number" id="mobile"
+                                        placeholder="Enter your mobile number" class="input-box" required=""></div>
+                            </div>
+                            <div class="field-wrap">
+                                <div class="field-label">Nearest Railway station<span class="red">*</span>:</div>
+                                <div class="field-content"><input type="text" id="nearest_station"
+                                        placeholder="Enter your nearest railway station" class="input-box" required="">
+                                </div>
+                            </div>
+                            <div class="field-wrap">
+                                <div class="field-label">First time to attend this event?<span class="red">*</span>:
+                                </div>
+                                <div class="field-content">
+                                    <div class="radio-wrap">
+                                        <input class="radio" id="yes" type="radio" value="yes" name="firstTime"
+                                            required=""><label for="yes">yes</label>
+                                    </div>
+                                    <div class="radio-wrap">
+                                        <input class="radio" id="no" type="radio" value="no" name="firstTime"
+                                            required=""><label for="no">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field-wrap">
+                                <div class="field-label">Attending with<span class="red">*</span>:</div>
+                                <div class="field-content">
+                                    <div class="radio-wrap">
+                                        <input class="radio" id="family" type="radio" value="family" name="attendType"
+                                            required=""><label for="family">family</label>
+                                    </div>
+                                    <div class="radio-wrap">
+                                        <input class="radio" id="alone" type="radio" value="alone" name="attendType"
+                                            required=""><label for="alone">alone</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanks-data" style="display: none;">
+                            <span class="thanks-txt">Thank You!</span><br> We will get back to you soon.
+                        </div>
+                        <div class="field-wrap">
+                            <div class="field-label"></div>
+                            <div class="field-content">
+                                <br>
+                                <a class="submit-btn btn btn-default" id="formSubmit">Register</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyB2UlOcD-aQ5usKEgw_t1ZeduD4XwRz7nw",
+                    authDomain: "ujss-events.firebaseapp.com",
+                    databaseURL: "https://ujss-events.firebaseio.com",
+                    projectId: "ujss-events",
+                    storageBucket: "ujss-events.appspot.com",
+                    messagingSenderId: "476032819961"
+                };
+                firebase.initializeApp(config);
+            </script>
+            <script>
+                function getDate(date) {
+                    return date.getDate() + '-' + date.getMonth() + 1 + '-' + date.getFullYear();
+                }
+
+                var database = firebase.database();
+                function writeUserData(name, address, email, mobile, nearestStation, firstTime, attendType) {
+                    var today = new Date();
+                    var dateString = getDate(today);
+                    var roomName = 'odiamilan-2019/users/';
+                    var key = firebase.database().ref().child('posts').push().key;
+                    var newKey = firebase.database().ref().child(roomName).push().key;
+                    firebase.database().ref(roomName + newKey).update({
+                        username: name,
+                        address: address,
+                        email: email,
+                        mobile: mobile,
+                        nearestStation: nearestStation,
+                        firstTime: firstTime,
+                        attendType: attendType,
+                        timestamp: Date.now()
+                    }, onComplete);
+                }
+
+                function onComplete() {
+                    $(".all-data-only, .submit-btn").hide();
+                    $(".thanks-data").show();
+                }
+
+                $("#formSubmit").on('click', function () {
+
+                    var name = $("#name").val();
+                    var address = $("#address").val();
+                    var email = $("#email").val();
+                    var mobile = $("#mobile").val();
+                    var nearestStation = $("#nearest_station").val();
+                    var firstTime = $("input[name='firstTime']:checked").val();
+                    var attendType = $("input[name='attendType']:checked").val();
+
+                    console.log("all fileds::", name, address, email, mobile, nearestStation, firstTime, attendType);
+                    if (name == '') {
+                        console.log('this', this);
+                        $("#name").addClass('error');
+                        alert('Please enter your name');
+                    } else if (address == '') {
+                        alert('Please enter your address');
+                    } else if (email == '') {
+                        alert('Please enter your email');
+                    } else if (mobile == '') {
+                        alert('Please enter your mobile');
+                    } else if (nearestStation == '') {
+                        alert('Please enter nearest railway station');
+                    } else if (firstTime == undefined) {
+                        alert('Please choose wheather attending for first time');
+                    } else if (attendType == undefined) {
+                        alert('Please choose with whom you attend');
+                    } else {
+                        writeUserData(name, address, email, mobile, nearestStation, firstTime, attendType);
+                    }
+                })
+            </script>
+
+        </div>
+    </div>
+</div>
