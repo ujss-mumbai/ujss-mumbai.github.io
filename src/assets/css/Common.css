@@ -1,0 +1,36 @@
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.page-container{
+    margin: 40px auto;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+}
+.page-title{
+    color: #d87d0a;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content-text-fluid.top{
+    align-items: baseline;
+}
+.org-item-full-list{
+}
+.org-item{
+    width: 31%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.org-item-card{
+    min-height: 180px;
+}
+.org-item-card h6{
+    font-weight: bold;
+    /* color: #d2691e ; */
+    font-size: 16px;
+}
