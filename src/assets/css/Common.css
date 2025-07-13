@@ -22,12 +22,12 @@
 .org-item-full-list{
 }
 .org-item{
-    width: 31%;
+    /* width: 31%; */
     text-align: left;
     margin-bottom: 10px;
 }
 .org-item-card{
-    min-height: 180px;
+    min-height: 150px;
 }
 .org-item-card h6{
     font-weight: bold;
@@ -38,4 +38,7 @@
     img{
         
     }
+}
+*{
+    box-sizing: border-box;
 }

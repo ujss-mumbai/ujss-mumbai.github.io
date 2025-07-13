@@ -15,7 +15,7 @@ import banner7 from './../assets/images/banner/7.jpg';
 import omicon from './../assets/images/om.png';
 
 
-import aboutImage from './../assets/images/advisory-team.jpg';
+import aboutImage from './../assets/images/odisha2.png';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -122,7 +122,7 @@ const Home = () => {
           </button>
         </div>
         <div className="flex-1 about-image-wrap">
-          {/* <img src={aboutImage} alt="About Us" className="about-image" /> */}
+          <img src={aboutImage} alt="About Us" className="about-image" />
         </div>
       </div>
     </div>

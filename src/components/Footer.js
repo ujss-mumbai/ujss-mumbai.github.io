@@ -78,10 +78,10 @@ function Footer() {
           </Box> */}
         </Box>
       </Box>
-      <Box sx={{ textAlign: 'center', mt: 4, borderTop: '1px solid #fff', pt: 1, fontWeight: 'bold' }}>
+      {/* <Box sx={{ textAlign: 'center', mt: 4, borderTop: '1px solid #fff', pt: 1, fontWeight: 'bold' }}>
         Regd. No-MUM No 7240-91 Of 2007-2008 Under Societies Registration Act XXI of 1860 <br></br>
         Utkal Jagruti Seva Sangh
-      </Box>
+      </Box> */}
     </Box>
   );
 }

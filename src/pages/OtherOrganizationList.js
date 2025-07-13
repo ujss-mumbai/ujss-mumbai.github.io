@@ -9,6 +9,22 @@ import {
 } from '@mui/material';
 import organizationData from '../data/organizationData';
 
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: (theme.vars ?? theme).palette.text.secondary,
+  ...theme.applyStyles('dark', {
+    backgroundColor: '#1A2027',
+  }),
+}));
+
+
 const OtherOrganizationList = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -46,7 +62,8 @@ const OtherOrganizationList = () => {
 
   return (
     <>
-    <Container maxWidth="lg" sx={{ padding: '24px' }}>
+    <div className='container page-container'>
+      <div className="">
         <h2 className='page-title'>List of Odia Organizations in Mumbai</h2>
       <TextField
         label="Search organizations"
@@ -63,7 +80,8 @@ const OtherOrganizationList = () => {
           const originalIndex = sortedOrganizations.findIndex(item => item.name === org.name);
 
           return (
-            <Grid item xs={12} sm={6} md={4} key={org.name} className="org-item"> 
+            <Grid size={{ xs: 12, sm: 2, md: 4 }}>
+            {/* <Grid item xs={12} sm={6} md={4} key={org.name} className="org-item">  */}
               <Card elevation={3}>
                 <CardContent className='org-item-card'>
                   {/* Display the numbering based on the original sorted index + 1 */}
@@ -98,7 +116,8 @@ const OtherOrganizationList = () => {
           );
         })}
       </Grid>
-    </Container>
+      </div>
+    </div>
     </>
   );
 };
