@@ -15,12 +15,14 @@ import GramVikash from './pages/GramVikash';
 import BloodDonation from './pages/BloodDonation';
 import CancerSeva from './pages/CancerSeva';
 import OtherOrganizations from './pages/OtherOrganizationList';
+import Analytics from "./Analytics";
 
 function App() {
   return (
     <Router>
       <Header />
       <div className="App" style={{ minHeight: '80vh' }}>
+        <Analytics />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
