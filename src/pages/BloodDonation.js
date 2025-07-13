@@ -1,5 +1,8 @@
 import React from 'react';
-import educationImage from '../assets/images/services/education.jpg';
+import educationImage1 from '../assets/images/services/blood-donation1.jpg';
+import educationImage2 from '../assets/images/services/blood-donation2.jpg';
+import educationImage3 from '../assets/images/services/blood-donation3.jpg';
+import educationImage4 from '../assets/images/services/blood-donation4.jpg';
 import './../assets/css/Common.css';
 
 const BloodDonation = () => {
@@ -17,7 +20,12 @@ const BloodDonation = () => {
                     <p>
                         Every unit of blood or platelets donated can save a life, and every volunteer becomes part of a greater cause. Join our mission to serve humanity, stand by cancer warriors, and make a lasting impact through the gift of life.
                     </p>
-                    
+                    <div className="image-gallery grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <img src={educationImage1} alt="blood donation" className="w-full h-auto rounded-xl shadow" />
+                        {/* <img src={educationImage2} alt="blood donation" className="w-full h-auto rounded-xl shadow" /> */}
+                        <img src={educationImage3} alt="blood donation" className="w-full h-auto rounded-xl shadow" />
+                        <img src={educationImage4} alt="blood donation" className="w-full h-auto rounded-xl shadow" />
+                    </div>
 
                 </div>
                 <div style={{ flex: 1 }}>

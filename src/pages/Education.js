@@ -15,6 +15,9 @@ const Education = () => {
             By supporting their academic journey, we aim to empower young minds and help them break the cycle of poverty. Your support can help nurture the next generation of leaders, professionals, and changemakers.
           </p>
           <p>
+            In addition to financial support, UJSS also organizes online Odia education classes every Sunday, enabling students from across the globe to connect with their roots and strengthen their language skills. This initiative has seen active participation from students worldwide, fostering cultural learning and community bonding beyond borders.
+          </p>
+          <p>
             Education is not just a gift—it’s an investment in humanity’s future. Join us in shaping lives through learning.
           </p>
         </div>
