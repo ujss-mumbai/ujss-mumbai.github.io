@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.a11074eb.css",
-    "main.js": "./static/js/main.8cc26454.js",
+    "main.css": "./static/css/main.ca555cdd.css",
+    "main.js": "./static/js/main.79c2e7ba.js",
     "static/js/453.748bf46f.chunk.js": "./static/js/453.748bf46f.chunk.js",
     "static/media/3.jpg": "./static/media/3.1a866f5f68788de80bc2.jpg",
     "static/media/4.jpg": "./static/media/4.b41736b00daa290fe5ed.jpg",
@@ -10,6 +10,7 @@
     "static/media/7.jpg": "./static/media/7.90a470d76ceb44189fcc.jpg",
     "static/media/6.jpg": "./static/media/6.e902a87be37756130056.jpg",
     "static/media/1.jpg": "./static/media/1.51b5b464ba0ac408e6a2.jpg",
+    "static/media/odisha2.png": "./static/media/odisha2.807c18e8422c37f1084f.png",
     "static/media/blood-donation2.jpg": "./static/media/blood-donation2.3b9760c8ac67a2653f8e.jpg",
     "static/media/blood-donation1.jpg": "./static/media/blood-donation1.95a7a007563798594eef.jpg",
     "static/media/education.jpg": "./static/media/education.b287e88cac1074931f75.jpg",
@@ -22,7 +23,6 @@
     "static/media/shradha8.jpg": "./static/media/shradha8.d1a44088a57bd86d9213.jpg",
     "static/media/blood-donation4.jpg": "./static/media/blood-donation4.3337b305b083530f8592.jpg",
     "static/media/blood-donation3.jpg": "./static/media/blood-donation3.43af4bbfbc29607f6a3e.jpg",
-    "static/media/advisory-team.jpg": "./static/media/advisory-team.08d2c5f88376fc4ec087.jpg",
     "static/media/shradha2.jpg": "./static/media/shradha2.8d6fdbdae42bb31649a8.jpg",
     "static/media/shradha4.jpg": "./static/media/shradha4.2003c652a0a91af29425.jpg",
     "static/media/shradha3.jpg": "./static/media/shradha3.28ecf225c08ce2f7f0eb.jpg",
@@ -36,12 +36,12 @@
     "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
-    "main.a11074eb.css.map": "./static/css/main.a11074eb.css.map",
-    "main.8cc26454.js.map": "./static/js/main.8cc26454.js.map",
+    "main.ca555cdd.css.map": "./static/css/main.ca555cdd.css.map",
+    "main.79c2e7ba.js.map": "./static/js/main.79c2e7ba.js.map",
     "453.748bf46f.chunk.js.map": "./static/js/453.748bf46f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a11074eb.css",
-    "static/js/main.8cc26454.js"
+    "static/css/main.ca555cdd.css",
+    "static/js/main.79c2e7ba.js"
   ]
 }
